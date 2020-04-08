@@ -22,10 +22,6 @@ os.system('xdg-open https://www.youtube.com/c/RyuzsanYT')
 os.system('clear')
 sleep(1.3)
 
-        spam = s.post(url, data=data).text
-
-        return spam
-
 def gas(no):
         s = requests.Session()
         url = "https://www.indihome.co.id/verifikasi-layanan/login-otp"
@@ -41,7 +37,7 @@ def gas(no):
 
         return spam
         
-def main(cnt, no):
+def main(cnt, no):`
         jml = 0
         with ThreadPoolExecutor(max_workers=2) as e:
                 futures = []
