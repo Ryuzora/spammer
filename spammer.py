@@ -37,7 +37,7 @@ def gas(no):
 
         return spam
         
-def main(cnt, no):`
+def main(cnt, no):
         jml = 0
         with ThreadPoolExecutor(max_workers=2) as e:
                 futures = []
