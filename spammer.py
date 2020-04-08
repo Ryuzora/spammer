@@ -22,17 +22,6 @@ os.system('xdg-open https://www.youtube.com/c/RyuzsanYT')
 os.system('clear')
 sleep(1.3)
 
-def gas(no):
-        s = requests.Session()
-        url = "https://www.indihome.co.id/verifik>
-        req = s.get(url).text
-        token = re.findall(r"name=\"_token\" valu>
-
-        data = {
-        "_token":token,
-        "msisdn":no
-        }
-
         spam = s.post(url, data=data).text
 
         return spam
